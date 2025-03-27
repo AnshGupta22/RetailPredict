@@ -201,7 +201,7 @@ if uploaded_file:
 
                 performance_data.append({
                     "Model": model_name,
-                    "R² Score": r2 if r2 else "N/A",
+                    "R² Score": r2*100 if r2 else "N/A",
                     "MSE": mse if mse else "N/A",
                     "RMSE": rmse if rmse else "N/A",
                     "MAE": mae if mae else "N/A"
